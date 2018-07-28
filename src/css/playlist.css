@@ -1,0 +1,92 @@
+*{
+	box-sizing: border-box; padding:0;margin: 0; text-decoration: none;list-style: none;
+}
+body{
+	background: #f8f8f8;
+}
+.banner{
+	width:100%;
+	height: 204px;
+	position: relative;
+	margin-bottom: 20px
+}
+.banner .bgp{
+	width: 100%;
+	height: 100%;
+	background: url(http://pa5et8o40.bkt.clouddn.com/18741175697446600.webp) no-repeat center;
+	background-size: cover;
+	filter: blur(5px);
+  z-index: -1;
+}
+.banner .cover-img>img{
+	width: 145px;
+	height: 145px;
+	position: absolute;
+	left: 2%;
+	top: 15%;
+}
+.banner .cover-img .words{
+		position: absolute;
+		top: 20%;
+		left: 2%;
+    font-size: 9px;
+    text-align: center;
+    line-height: 17px;
+    background-color: rgba(217,48,48,.8);
+    border-top-right-radius: 17px;
+		border-bottom-right-radius: 17px;
+		padding: 0 8px;
+		color: #fff;
+}
+.banner .listName{
+	color: #fff;
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	font-size: 20px;
+}
+.songList>h3{
+	height: 23px;
+	line-height: 23px;
+	padding: 0 10px;
+	font-size: 12px;
+	color: #666;
+	background-color: #eeeff0;
+}
+.songList .list li.song{
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #ddd;
+}
+.songList .list li.song .number{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+    width: 40px;
+		font-size: 17px;
+    color: #999;
+}
+.songList .list li.song .nameWrapper{
+	flex-grow: 1;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-break: normal;
+	font-size: 15px;
+	line-height: 20px;
+	padding: 6px 0;
+}
+.songList .list li.song .nameWrapper .singer{
+	font-size: 12px;
+  color: #888
+}
+.songList .list li.song a{
+	padding: 10px 5px;
+}
+.songList .list li.song .icon-play{
+	width: 22px;
+  height: 22px;
+  vertical-align: middle;
+	fill: #AAA;
+}
+

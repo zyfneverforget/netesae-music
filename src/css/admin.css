@@ -1,0 +1,108 @@
+*{
+	box-sizing: border-box;margin: 0;padding: 0;text-decoration: none;list-style: none;
+}
+.clearfix:after {
+	content:""; 
+	display: block; 
+	clear:both; 
+}
+body{
+	background: #f5f5f5;
+}
+.banner{
+	height: 70px;
+	background: #242424;
+	border-bottom: 1px solid #000;
+}
+.bannerWrapper{
+	width: 1100px;
+	margin: 0 auto;
+	background: #242424;
+}
+.bannerWrapper .channel{
+	padding: 24px 0;
+	font-size: 20px;
+	color: #ccc;
+	line-height: 22px;
+}
+.banner .logo{
+	float: left;
+	width: 176px;
+	height: 69px;
+	background: url(//s3.music.126.net/uservideo/s/img/frame/topbar.png?v=26baca7…) no-repeat;
+}
+.bar{
+	height: 5px;
+	background-color: #c20c0c;
+  border-bottom: 1px solid #a40011;
+}
+section.upload{
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA9QAAAAKCAIAAADaaoERAAAAGXRFW…MNAACYbwAAMN8AAGC+AQAA8w0AAOYbAAAw3wAA8KsrwAByrgYR8ONamQAAAABJRU5ErkJggg==) repeat-y center 0;
+	width: 980px;
+	min-height: 700px;
+	height: 700px;
+	margin: 0 auto;
+	background-color: #fff;
+	border-left: 1px solid #d3d3d3;
+	border-width: 0 1px;
+	display: flex;
+}
+section.upload .songlist{
+	min-width: 184px;
+	background: #fcfcfc;
+	padding-top: 30px;
+}
+section.upload .songlist>h3{
+	padding-bottom: 15px;
+	border-bottom: 1px solid #ddd;
+}
+section.upload .songlist>li:first-child{
+	border-top: 1px solid #ddd;
+}
+section.upload .songlist >li{
+	padding: 10px 0;
+	background: #f5f5f5;
+	border-bottom: 1px solid #ddd;
+	cursor: pointer;
+	padding-left: 5px;
+}
+section.upload .songlist>li.active{ 
+	background: #ffffff;
+}
+section.upload .uploadAera{
+	flex-grow: 1;
+}
+section.upload .uploadAera.collapse{
+	display: none
+}
+.uploadAera #container{
+	width: 675px;
+	height: 370px;
+	border: 1px solid#ddd;
+	margin: auto;
+	margin-top: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+section.upload .uploadAera .plus{
+	display: block;
+	position: relative;
+	width: 120px;
+	height: 90px;
+	background: url(//s3.music.126.net/uservideo/s/img/video/upload.png?v=a0fedb4…) 50% no-repeat;
+}
+section.upload .editSong{
+	display: none;
+}
+section.upload .editSong.show{
+	flex-grow: 1;
+	display: block;
+}
+section.upload .editSong .editForm{
+	margin-top: 10%;
+	margin-left: 33%;
+}
+section.upload .editSong .editForm .row{
+	margin-bottom: 10px;
+}
